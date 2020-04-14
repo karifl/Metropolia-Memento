@@ -36,21 +36,21 @@ public class Arvuuttaja {
 	private StringBuilder content; //säilöö stringin
 	
 		
-	public Memento(int state, StringBuilder content) {
+	private Memento(int state, StringBuilder content) {
 		this.state = state;
 		this.content=new StringBuilder(content);
 	}
 	
 	
-	public int getState() {
+	private int getState() {
 		return this.state;
 	}
 	
-	public void setState(int state) {
+	private void setState(int state) {
 		this.state = state;
 	}
 	
-	public StringBuilder getContent() {
+	private StringBuilder getContent() {
 		return content;
 	}
 	
